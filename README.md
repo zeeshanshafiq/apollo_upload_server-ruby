@@ -1,6 +1,6 @@
 # ApolloUploadServer
 
-Middleware which allows you to upload files using [graphql-ruby](https://github.com/rmosolgo/graphql-ruby), [apollo-upload-client](https://github.com/jaydenseric/apollo-upload-client) and Ruby on Rails.
+Middleware which allows you to upload files using [graphql-ruby](https://github.com/rmosolgo/graphql-ruby), [apollo-upload-client](https://github.com/jaydenseric/apollo-upload-client) and Sinatra.
 
 Note: this implementation uses [v2 of the GraphQL multipart request spec](https://github.com/jaydenseric/graphql-multipart-request-spec/tree/v2.0.0-alpha.2), so you should use apollo-upload-client library >= v7.0.0-alpha.3. If you need support for [v1 of the GraphQL multipart request spec](https://github.com/jaydenseric/graphql-multipart-request-spec/tree/v1.0.0), you must
 use [version 1.0.0](https://github.com/jetruby/apollo_upload_server-ruby/tree/1.0.0) of this gem.
@@ -9,16 +9,12 @@ use [version 1.0.0](https://github.com/jetruby/apollo_upload_server-ruby/tree/1.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'apollo_upload_server', '2.0.1'
+gem 'apollo_upload_server', github: 'zeeshanshafiq/apollo_upload_server-ruby', branch: 'master'
 ```
 
 And then execute:
 
     $ bundle
-
-Or install it yourself as:
-
-    $ gem install apollo_upload_server
 
 Middleware will be used automatically.
 
